@@ -1,0 +1,21 @@
+<h2 class="mb-3">Nova Oficina</h2>
+<form action="/oficinas/cria" method="POST" class="bg-white p-4 shadow-sm rounded">
+  <div class="mb-3">
+    <label for="titulo" class="form-label">Título</label>
+    <input type="text" class="form-control" id="titulo" name="titulo" required>
+  </div>
+  <div class="mb-3">
+    <label for="responsavel" class="form-label">Responsável</label>
+    <input type="text" class="form-control" id="responsavel" name="responsavel" required>
+  </div>
+  <div class="mb-3">
+    <label for="descricao" class="form-label">Descrição</label>
+    <textarea class="form-control" id="descricao" name="descricao" rows="5" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="carga_horaria" class="form-label">Carga horária total (em horas)</label>
+    <input type="number" class="form-control" id="carga_horaria" name="carga_horaria" min="1" max="40" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <a href="/oficinas" class="btn btn-secondary">Cancelar</a>
+</form>
