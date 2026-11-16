@@ -1,13 +1,11 @@
-<h2 class="mb-3">Consulta de Oficina</h2>
-<div class="bg-white p-4 shadow-sm rounded">
-  <p><strong>ID:</strong> {{oficina.id}}</p>
-  <p><strong>Título:</strong> {{oficina.titulo}}</p>
-  <p><strong>Responsável:</strong> {{oficina.responsavel}}</p>
-  <p><strong>Carga horária total:</strong> {{oficina.carga_horaria}} h</p>
-  <p><strong>Inscrições:</strong> {{#if oficina.inscricoesAbertas}}Abertas{{else}}Encerradas{{/if}}</p>
-  <p><strong>Descrição:</strong></p>
-  <pre class="bg-light p-3 rounded border">{{oficina.descricao}}</pre>
-  
-  <a href="/oficinas/altera/{{oficina.id}}" class="btn btn-primary mt-3">Editar</a>
-  <a href="/oficinas" class="btn btn-secondary mt-3">Voltar</a>
-</div>
+<h1 class="mb-3">Consulta de Oficina</h1>
+
+<p class="mb-2"><strong>ID</strong><br>{{oficina.id}}</p>
+<p class="mb-2"><strong>Título</strong><br>{{oficina.titulo}}</p>
+<p class="mb-2"><strong>Responsável</strong><br>{{oficina.responsavel}}</p>
+<p class="mb-2"><strong>Carga horária total</strong><br>{{oficina.carga_horaria}} h</p>
+<p class="mb-2"><strong>Inscrições</strong><br>{{#if oficina.inscricoesAbertas}}Abertas{{else}}Encerradas{{/if}}</p>
+<p class="mb-1"><strong>Descrição</strong></p>
+<pre>{{oficina.descricao}}</pre>
+
+<a href="/oficinas/altera/{{oficina.id}}" class="btn btn-primary mt-3">Editar</a>
